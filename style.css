@@ -91,15 +91,12 @@ html{
 }
 
 .inicio .contenido-banner h1 {
-    font-size: 15px;
-    font-weight: normal;
+    margin-top: 40px;
+    font-size: 42px;
     font-family: 'Righteous';
 }
 
 .inicio .contenido-banner h2 {
-    color: #fff;
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid #fff;
+    font-size: 15px;
+    font-weight: normal;
 }
-
