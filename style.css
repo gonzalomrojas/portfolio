@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Righteous&family=Roboto+Condensed:wght@300&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Righteous&family=Roboto+Condensed:wght@300&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
 
 *{
     box-sizing: border-box;
@@ -197,4 +197,54 @@ html{
     display: block;
     margin-bottom: 10px;
 }
+.contacto {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0px;
+}
+.contacto .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila {
+    display: flex;
 
+}
+.contacto col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+.contacto button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #1cb698;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #1cb698;
+    position: relative;
+    z-index: 10;
+
+}
+.contacto .button:hover {
+     
+}
