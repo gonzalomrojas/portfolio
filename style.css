@@ -180,23 +180,30 @@ html{
     text-align: center;
     padding: 20px 0;
 }
-.skills .fila {
+.contenedor-logos {
     display: flex;
+    justify-content: space-between;
+    align-items: center;    
+  
 }
-.skills .fila .col {
-    width: 50%;
-    padding: 0 20px;
+.contenedor-logos img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover; 
 }
-.skills .fila .col h3 {
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-bottom: 25px;
+.logo span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
 }
-.skills .skill > span {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-}
+
+/*SECCION PROYECTOS*/
+
+
+/*SECCION CONTACTO*/
+
 .contacto {
     background-color: #252A2E;
     color: #fff;
@@ -246,5 +253,16 @@ html{
 
 }
 .contacto .button:hover {
-     
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #1cb698;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+
 }
