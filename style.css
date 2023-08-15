@@ -179,6 +179,7 @@ html{
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
+
 }
 .contenedor-logos {
     display: flex;
@@ -188,7 +189,7 @@ html{
 }
 .contenedor-logos img {
     max-width: 100%;
-    height: 200px;
+    max-height: 200px;
     object-fit: cover; 
 }
 .logo span {
@@ -197,6 +198,10 @@ html{
     align-items: center;
     text-align: center;
     margin-top: 15px;
+}
+.logo span:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
 }
 
 /*SECCION PROYECTOS*/
@@ -238,7 +243,7 @@ html{
     color: #fff;
     font-size: 18px;
 }
-.contacto button {
+.contacto .submit {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #1cb698;
@@ -252,17 +257,4 @@ html{
     z-index: 10;
 
 }
-.contacto .button:hover {
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #1cb698;
-    width: fit-content;
-    display: block;
-    margin: 20px auto;
-    padding: 10px 22px;
-    font-size: 16px;
-    color: #fff;
-    position: relative;
-    z-index: 10;
 
-}
