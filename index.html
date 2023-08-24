@@ -9,8 +9,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer"/>
+    
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -21,6 +21,12 @@
           <a href="#">Portfolio</a>
         </div>
         <nav id="nav">
+          <!-- Menu hamburguesa -->
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+            
           <ul>
             <li><a href="#inicio">INICIO</a></li>
             <li><a href="#sobreMi">SOBRE MI</a></li>
@@ -36,9 +42,6 @@
             </li>
           </ul>
         </nav>
-        <div class="nav-responsive">
-          <i class="fa-solid fa-bars"></i>
-        </div>
       </header>
     </div>
     <!-- Seccion INICIO -->
@@ -48,7 +51,7 @@
           <img src="assets/hero.JPG" alt="" />
         </div>
         <h1>Gonzalo Martin Rojas</h1>
-        <h2>Desarrollador Web</h2>
+        <h2>Desarrollador Web Autodidacta</h2>
       </div>
     </section>
     <!-- Seccion SOBRE MI -->
@@ -56,24 +59,30 @@
       <div class="contenido-seccion">
         <h2>Sobre Mi</h2>
         <p>
-          <span>Hola, mi nombre es Gonzalo</span> tengo 22 años soy
-          desarrollador web autodidadcta con interés de adquirir experiencia laboral sobre el
-          ámbito del desarrollo de software y ampliar mis conocimientos de
-          programación en nuevos lenguajes.
+          <span>Hola, mi nombre es Gonzalo</span> tengo 22 años y soy un desarrollador web autodidacta con un profundo interés en adquirir experiencia laboral en el ámbito del desarrollo de software, así como en ampliar mis conocimientos de programación en nuevos lenguajes. Además, aspiro a cumplir mi meta de convertirme en piloto privado de avión, una pasión que nació desde el momento en que decidí estudiar en una escuela técnica aeronáutica. Esta experiencia no solo me brindó una sólida formación técnica, sino también valores y conocimientos fundamentales que han enriquecido mi carrera y mi perspectiva de la vida en general.
+          <br>
+          El deporte es otra de mis grandes pasiones, y lo practico a nivel de alto rendimiento. Me especializo en pruebas de atletismo de medio fondo, como los 800 metros y 1500 metros, entre otras. Esta dedicación al deporte me ha enseñado la importancia del esfuerzo, la disciplina y la superación personal, valores que también aplico en mi desarrollo como profesional en el mundo de la programación.
+          <br>
+          Además de mis intereses en el ámbito técnico y deportivo, tengo una profunda conexión con la música en todas sus formas. Toco la batería, una habilidad que he cultivado desde mi infancia y que inicialmente aprendí en la iglesia a la que sigo asistiendo. La música no solo es una forma de expresión para mí, sino también una manera de encontrar equilibrio y creatividad en mi vida.
+          <br>
+          En resumen, soy un individuo apasionado y comprometido, tanto en mi desarrollo como programador web y en la búsqueda de oportunidades para crecer en el mundo del desarrollo de software, como en la consecución de mi sueño de convertirme en piloto privado. Mi formación en una escuela técnica aeronáutica y mi dedicación al atletismo de medio fondo me han inculcado valores y principios fundamentales que guían mi camino. La música y la batería agregan otra dimensión a mi vida, enriqueciéndola con creatividad y ritmo.
+          <br>
+          Estoy emocionado por lo que el futuro tiene reservado y entusiasmado por seguir aprendiendo y creciendo en todas las áreas que me apasionan.
         </p>
       </div>
-      <div class="fila">
+      <div class="datos">
         <!-- Datos personales -->
-        <div class="col">
+        <div class="contenido-seccion">
           <h3>Datos Personales</h3>
           <ul>
+            <br>
             <li>
               <strong>Fecha de Nacimiento</strong>
               06/03/2001
             </li>
             <li>
-              <strong>Telefono</strong>
-              +5411-0000-0000
+              <strong>Linkedin</strong>
+              <a href="http://www.linkedin.com/in/gonzalomrojas631/" target="_blank">Visitar</a>
             </li>
             <li>
               <strong>Email</strong>
@@ -135,5 +144,12 @@
         </button>
       </div>
   </section>  
+  <div class="go-top-container">
+    <div class="go-top-button">
+      <i class="fas fa-chevron-up"></i> 
+    </div>
+  </div>
+  <button id="scrollTopButton">↑</button>  
+  <script src="script.js"></script>
   </body>
 </html>

@@ -1,260 +1,390 @@
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Righteous&family=Roboto+Condensed:wght@300&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Righteous&family=Roboto+Condensed:wght@300&family=Work+Sans:wght@100;200;300;400;600;800&display=swap");
 
-*{
-    box-sizing: border-box;
-    font-family: 'Work Sans';
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans";
+  margin: 0;
+  padding: 0;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-.contenedor-header{
-    background: #1e2326;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99;
+.contenedor-header {
+  background: #1e2326;
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.contenedor-header header {
+  background: #1e2326;
+  position: sticky;
+  top: 0;
 }
 
-.contenedor-header header{
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
+.contenedor-header header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
 }
 
-.contenedor-header header .logo a{
-    font-family: 'Righteous';
-    font-size: 36px;
-    color: #1cb698;
-    text-decoration: none;
+.contenedor-header header .logo a {
+  font-family: "Righteous";
+  font-size: 36px;
+  color: #0000ff;
+  text-decoration: none;
 }
 
-.contenedor-header header ul{
-    display: flex;
-    list-style: none;
+.contenedor-header header ul {
+  display: flex;
+  list-style: none;
 }
 
-.contenedor-header header nav ul li a{
-    text-align: none;
-    color: #fff;
-    margin: 0 15px;
-    padding: 3px;
-    transition: .5s;
-    text-decoration: none;
+.contenedor-header header nav ul li a {
+  text-align: none;
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  text-decoration: none;
 }
 .contenedor-header .curriculum {
-   background-color: #1cb698; 
-   border-radius: 5px;
+  background-color: #0000ff;
+  border-radius: 5px;
 }
 .contenedor-header header nav ul li a:hover {
-    color: #1cb698;
+  color: #0000ff;
 }
 
-.nav-responsive {
-    background-color: #1cb698;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
+/* Menú hamburguesa*/
+.checkbtn {
+  font-size: 25px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
 }
+#check {
+  display: none;
+}
+
+
+/*SECCION INICIO */
+
 
 .inicio {
-    background: linear-gradient(to top, rgba(38,35,38,.8), rgba(30,35,38,1)), url(assets/fondo.JPG);
-    background-size: cover;
-    height: 100vh;
-    color: #fff;
-    display: flex;
-    align-items: center;
+  background: linear-gradient(
+      to top,
+      rgba(38, 35, 38, 0.8),
+      rgba(30, 35, 38, 1)
+    ),
+    url(assets/fondo.JPG);
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
 }
 
 .inicio .contenido-banner {
-    padding: 20px;
-    background-color: #1e2326;
-    max-width: 350px;
-    margin: auto;
-    text-align: center;
-    border-radius: 40px;
+  padding: 20px;
+  background-color: #1e2326;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  border-radius: 40px;
 }
 
 .inicio .contenido-banner img {
-    margin-top: 40px;
-    border: 3px solid #1cb698;
-    display: block;
-    width: 80%;
-    margin: auto;
-    border-radius: 100%;
+  margin-top: 40px;
+  border: 3px solid #0000ff;
+  display: block;
+  width: 80%;
+  margin: auto;
+  border-radius: 100%;
 }
 
 .inicio .contenido-banner h1 {
-    margin-top: 40px;
-    font-size: 42px;
-    font-family: 'Righteous';
+  margin-top: 40px;
+  font-size: 42px;
+  font-family: "Righteous";
 }
 
 .inicio .contenido-banner h2 {
-    font-size: 15px;
-    font-weight: normal;
+  font-size: 15px;
+  font-weight: normal;
 }
 
 .sobreMi {
-    background-color: #1e2326;
-    color: #fff;
-    padding: 50px 20px;
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 20px;
 }
 
 .sobreMi .contenido-seccion {
-    max-width: 1100px;
-    margin: auto;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .sobreMi h2 {
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
 }
 
 .sobreMi .contenido-seccion p {
-    font: 18px;
-    line-height: 22px;
-    margin-bottom:20px ;
+  font: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
 }
 
 .sobreMi .contenido-seccion p span {
-    color: #1cb698;
-    font-weight: bold;
+  color: #0000ff;
+  font-weight: bold;
 }
 .sobreMi .fila {
-    display: flex;
-} 
+  display: flex;
+}
 
 .sobreMi .fila .col h3 {
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-bottom: 25px;
+  font-size: 28px;
+  font-family: "Righteous";
+  margin-bottom: 25px;
 }
 
 .sobreMi .fila .col ul {
-    list-style: none;
+  list-style: none;
 }
 
 .sobreMi .fila .col ul li {
-    margin: 12px 0;
+  margin: 12px 0;
 }
 
 .sobreMi .fila .col ul li strong {
-    display: inline-block;
-    color: #1cb698;
-    width: 130px;
+  display: inline-block;
+  color: #0000ff;
+  width: 130px;
 }
 
 .sobreMi .fila .col ul li span {
-    background-color: #1cb698;
-    padding: 3px;
-    font-weight: bold;
-    border-radius: 5px;
+  background-color: #0000ff;
+  padding: 3px;
+  font-weight: bold;
+  border-radius: 5px;
 }
+
+/* SECCION Datos Personales*/
+.datos .contenido-seccion {
+  text-align: start;
+  justify-content: center;
+}
+.datos .contenido-seccion h3 {
+  text-align: center;
+  font-size: 48px;
+}
+.datos .contenido-seccion li {
+  list-style: none;
+  text-align:start;
+}
+
+
 /* SECCION SKILLS*/
 .skills {
-    background-color: #252A2E;
-    color: #fff;
-    padding: 50px 20px;
+  background-color: #252a2e;
+  color: #fff;
+  padding: 50px 20px;
 }
 
 .skills .contenido-seccion {
-    max-width: 1100px;
-    margin: auto;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .skills h2 {
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
-
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
 }
 .contenedor-logos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .contenedor-logos img {
-    max-width: 100%;
-    max-height: 200px;
-    object-fit: cover; 
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: cover;
 }
 .logo span {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
 }
 .logo span:hover {
-    transform: scale(1.2);
-    transition: 0.3s;
+  transform: scale(1.2);
+  transition: 0.3s;
 }
 
 /*SECCION PROYECTOS*/
 
-
 /*SECCION CONTACTO*/
 
 .contacto {
-    background-color: #252A2E;
-    color: #fff;
-    padding: 50px 0px;
+  background-color: #252a2e;
+  color: #fff;
+  padding: 50px 0px;
 }
 .contacto .contenido-seccion {
-    max-width: 1100px;
-    margin: auto;
+  max-width: 1100px;
+  margin: auto;
 }
 .contacto h2 {
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
 }
 .contacto .fila {
-    display: flex;
-
+  display: flex;
+  justify-content: center;
 }
 .contacto col {
-    width: 50%;
-    padding: 10px;
-    position: relative;
+  width: 50%;
+  padding: 10px;
+  position: relative;
 }
-.contacto .col input, .contacto .col textarea {
-    display: block;
-    width: 100%;
-    padding: 18px;
-    border: none;
-    margin-bottom: 20px;
-    background-color: #252A2E;
-    color: #fff;
-    font-size: 18px;
+.contacto .col input,
+.contacto .col textarea {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 18px;
 }
 .contacto .submit {
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #1cb698;
-    width: fit-content;
-    display: block;
-    margin: 20px auto;
-    padding: 10px 22px;
-    font-size: 16px;
-    color: #1cb698;
-    position: relative;
-    z-index: 10;
-
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #0000ff;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #0000ff;
+  position: relative;
+  z-index: 10;
 }
 
+/* SCROLL BUTTOM*/
+#scrollTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+  padding: 10px 15px;
+  background-color:#0000ff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;  
+}
+
+/*@MEDIA*/
+
+@media (max-width: 952px) {
+  .contenedor-header {
+    background-color: rgba(30, 35, 38, 0.3);
+  }
+  .logo {
+    font-size: 30px;
+    padding-left: 10px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+  .contenedor-header header ul {
+    display: block;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    right: 100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #252a2e;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #252a2e;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .scrollTopButton{
+  font-size: 16px;
+  padding: 8px 12px;
+  bottom: 10px;
+  right: 10px;
+}
+}
